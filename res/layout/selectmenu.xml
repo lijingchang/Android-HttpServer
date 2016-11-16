@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip">
+    <Button 
+        android:layout_width="40dip" 
+        android:layout_height="40dip"
+        android:text="U盘挂载"
+        android:id="@+id/btn_home" 
+        android:layout_gravity="left"
+        android:layout_weight="1"
+    />
+
+    <Button 
+        android:layout_width="40dip" 
+        android:layout_height="40dip"
+        android:text="BACK"
+        android:id="@+id/btn_back" 
+        android:layout_gravity="right"
+        android:layout_weight="1"
+    />
+    </LinearLayout>
+    
+     <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="700dip">
+    <ListView 
+        android:layout_width="300dip"
+        android:layout_height="500dip"
+        android:descendantFocusability="blocksDescendants"
+        android:focusable="true"
+        android:id="@+id/list_dir"
+    />
+    <Button 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_ok"
+        android:textSize="20dp"
+        android:text="OK"/>
+     </LinearLayout>
+</LinearLayout>

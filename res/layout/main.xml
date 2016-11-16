@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    
+    <TextView  
+    android:id="@+id/textview"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="@string/status" android:paddingLeft="4px"/>
+    
+    <LinearLayout 
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+    
+     <EditText  
+    android:id="@+id/addr"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:hint="请输入http根目录" 
+    android:visibility="gone"
+    android:paddingLeft="4px"/>
+     
+     <Button
+         android:id="@+id/submit"
+         android:text="切换根目录"
+         android:textSize="10dp"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         />
+     
+    </LinearLayout>
+    
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+        
+    <WebView 
+        android:id="@+id/webview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+    />
+
+</LinearLayout>
